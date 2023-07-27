@@ -1,0 +1,136 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Whole Style */
+body{
+    font-family: "Roboto",sans-serif;
+}
+
+/* Navigation */
+.nav-container{
+    height: 72px;
+    background: linear-gradient(90deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.5) 100%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.wrapper{
+    max-width: 1300px;
+    margin: 0 auto;
+    height: 72px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul{
+    display: flex;
+}
+nav .logo{
+    margin-top: 20px;
+}
+.nav-items li{
+    list-style: none;
+    margin-right: 32px;
+}
+.nav-items li:nth-last-of-type(1){
+    margin: 0;
+}
+.nav-items li a{
+    color: #fff;
+    font-size: 24px; 
+    font-weight: 400;
+    text-decoration: none;
+}
+
+/* --------Header--------- */
+
+.header-container{
+    height: 900px;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.5) 100%), url(./img/Background-2.jpg);
+    margin-top: 0;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Hero Section */
+.header-container .hero-container{
+    display: flex;
+    width: 750px;
+    height: 330px;
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-shrink: 0;
+    margin-top: 200px;
+    margin-left: 130px;
+}
+.header-container .hero-contant{
+    display: flex;
+    flex-direction: column;
+    width: 750px;
+    height: 230px;
+    flex-shrink: 0;
+    color: #fff;
+}
+.header-container .hero-contant h1{
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 105%;
+    width: 750px;
+    height: 130px;
+    flex-shrink: 0;
+}
+.header-container .hero-contant p{
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 115%;
+    margin-top: 10px;
+    width: 580px;
+    height: 72px;
+    flex-shrink: 0;
+    margin-left: 0;
+}
+
+/* Call Section */
+.header-container .call-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    color: #fff;
+}
+.header-container .call-section h2{
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 115%;
+}
+.header-container .call-section button{
+    border-radius: 50px;
+    border: 6px solid #000;
+    background: rgba(0, 0, 0, 0.30);
+    width: 250px;
+    height: 65px;
+    flex-shrink: 0;
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 115%;
+    color: #fff;
+}
+.header-container .call-section button:hover{
+    text-shadow: 2px 2px 4px #000000;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%);
+}
+.header-container .call-section button:active{
+    text-shadow: none;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%);
+}
+
