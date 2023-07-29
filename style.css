@@ -30,9 +30,24 @@ nav{
 nav ul{
     display: flex;
 }
+
+/* Logo */
 nav .logo{
     margin-top: 20px;
 }
+nav .logo img{
+    width: 110%;
+}
+nav .logo img:hover{
+    -webkit-filter: drop-shadow(5px 5px 5px #000000);
+    filter: drop-shadow(5px 5px 5px #000000);
+}
+nav .logo img:active{
+    -webkit-filter: drop-shadow(10px 10px 10px #000000);
+    filter: drop-shadow(10px 10px 10px #000000);
+}
+
+/* Nav Items */
 .nav-items li{
     list-style: none;
     margin-right: 32px;
