@@ -142,7 +142,7 @@ nav li:nth-last-of-type(1){
     .nav-menu{
         position: fixed;
         left: 100%;
-        top: 70px;
+        top: 55px;
         /* gap: 0; */
         flex-direction: column;
         background: linear-gradient(90deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.7) 50%, rgba(0,0,0,0.8) 100%);
@@ -150,6 +150,7 @@ nav li:nth-last-of-type(1){
         text-align: center;
         justify-content: space-evenly;
         transition: 300ms;
+        padding: 10px;
     }
     .nav-item{
         margin:0;
@@ -185,15 +186,8 @@ nav li:nth-last-of-type(1){
 }
  @media(max-width:450px){
     .header-container{
-        position: relative;
-        height:900px;
-        width: 100%;
         background: linear-gradient(90deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.5) 100%), url(./img/Background-2-mobile.jpg);
-        margin-top: 0;
-        background-position: center center;
         background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
     }
  }
 
@@ -249,6 +243,7 @@ nav li:nth-last-of-type(1){
     height: 72px;
     flex-shrink: 0;
     margin-left: 0;
+    opacity: 90%;
 }
 /* Resposive Hero Contant */
 @media(max-width:1200px){
@@ -390,8 +385,13 @@ nav li:nth-last-of-type(1){
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    margin-top: 80px;
     flex-direction: column;
+}
+@media(max-width:450px){
+    .services{
+        margin-top: 40px;
+    }
 }
 /* Services header */
 .services-header h1{
@@ -403,11 +403,27 @@ nav li:nth-last-of-type(1){
     line-height: normal;
     text-transform: uppercase;  
 }
+@media(max-width:850px){
+    .services-header h1{
+        font-size: 48px; 
+    }
+}
+@media(max-width:450px){
+    .services-header h1{
+        font-size: 36px;
+    }
+}
 .services-header div{
     margin: 0 auto;
     width: 125px;
     height: 10px;
     background-color: #C1272D;
+}
+@media(max-width:450px){
+    .services-header div{
+        width: 90px;
+        height: 5px;
+    }
 }
 /* Swiper Slider */
 .slide-container{
@@ -428,6 +444,8 @@ nav li:nth-last-of-type(1){
     background-color: #C1272D;
     border-radius: 15px;
     box-shadow: 8px 8px 10px 0px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    padding : 0px 0px;
 }
 .card:hover{
     box-shadow: 8px 8px 10px 0px rgba(0, 0, 0, 0.45);
@@ -454,6 +472,7 @@ nav li:nth-last-of-type(1){
     border-radius: 15px 15px 0 0;
     background-color: #C1272D;
 }
+
 .card-image .card-img{
     height: 100%;
     width: 100%;
@@ -463,12 +482,103 @@ nav li:nth-last-of-type(1){
 }
 .name{
     color: #FFF;
-    font-size: 22px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 500;
     line-height: 150%; 
     text-transform: uppercase;
     margin-top: 20px;
+}
+/* Responsive services section */
+@media(max-width:1200px){
+    .card-image{
+        height: 250px;
+    }
+    .name{
+        font-size: 16px;
+    }
+}
+@media(max-width:1000px){
+    .card-image{
+        height: 230px;
+    }
+    .name{
+        font-size: 14px;
+    }
+}
+@media(max-width:920px){
+    .card-image{
+        height: 200px;
+    }
+    .name{
+        font-size: 12px;
+    }
+}
+
+@media(max-width:850px){
+    .card-image{
+        width: 300px;
+        height: 250px;
+    }
+    .name{
+        font-size: 16px;
+    }
+}
+@media(max-width:750px){
+    .card-image{
+        width: 300px;
+        height: 220px;
+    }
+    .name{
+        font-size: 14px;
+    }
+}
+@media(max-width:700px){
+    .card-image{
+        width: 300px;
+        height: 200px;
+    }
+    .name{
+        font-size: 12px;
+    }
+}
+@media(max-width:650px){
+    .card-image{
+        width: 300px;
+        height: 260px;
+    }
+    .name{
+        font-size: 16px;
+    }
+}
+
+@media(max-width:580px){
+    .card-image{
+        width: 220px;
+        height: 230px;
+    }
+    .name{
+        font-size: 14px;
+    }
+}
+@media(max-width:520px){
+    .card-image{
+        width: 200px;
+        height: 200px;
+    }
+    .name{
+        font-size: 12px;
+    }
+}
+
+@media(max-width:450px){
+    .card-image{
+        width: 350px;
+        height: 300px;
+    }
+    .name{
+        font-size: 18px;
+    }
 }
 .button{
     border: 1px black solid;
