@@ -83,3 +83,40 @@ var swiper = new Swiper(".slide-content-p", {
     },
   },
 });
+
+// ------------------Contact Us---------------------
+function send() {
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var phone = document.getElementById("phone").value;
+  var subject = document.getElementById("subject").value;
+  var massage = document.getElementById("massage").value;
+  var body =
+    "Name: " +
+    name +
+    "<br/> Email: " +
+    email +
+    "<br/> Phone: " +
+    phone +
+    "<br/> Subject" +
+    subject +
+    "<br/> Massage: " +
+    massage;
+
+  Email.send({
+    SecureToken: "1dc5233e-ab7b-406e-a85f-ad8f7c5a6b48",
+    To: "tdcalumtech@gmail.com",
+    From: "dhishanc.creation@gmail.com",
+    Subject: subject,
+    Body: body,
+  }).then(
+      message => {
+        if (message == "OK") {
+          swal("Successfull", "Your Data Successfull Recevied", "success");
+        }
+        else{
+          swal("Something Wrong", "Your Data is not Recevied", "error");
+        }
+      }
+    );
+}

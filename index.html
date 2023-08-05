@@ -315,10 +315,32 @@
       </div>
     </div>
 
+    <!-- ------------------Contact Us------------------ -->
+    <div class="contact-container">
+      <div class="contact-header">
+        <h1>Contact Us</h1>
+        <div></div>
+      </div>
+      <form method="post" class="contact-from">
+        <input type="text" id="name" placeholder="Name" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="text" id="phone" placeholder="Phone No." required>
+        <input type="text" id="subject" placeholder="Subject." required>
+        <textarea id="massage" rows="4" placeholder="Enter Your Massage" required></textarea>
+        <input type="button" value="Send" onclick="send()">
+      </form>
+      <div class="business-card">
+        <img src="./img/Business Card.svg" alt="Business Card">
+      </div>
+    </div>
     
   </body>
   <!-- Swiper JS -->
   <script src="./swiper-bundle.min.js"></script>
+  <!-- Smtp JS -->
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <!-- Sweet alert -->
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <!-- Javascript -->
   <script src="./script.js"></script>
 </html>

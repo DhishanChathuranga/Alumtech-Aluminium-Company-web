@@ -756,3 +756,74 @@ nav li:nth-last-of-type(1){
 }
 
 
+/* -------------------------Contact Us--------------------------- */
+
+.contact-container{
+    margin-top: 70px;
+    width: 100%;
+    /* height: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.contact-header h1{
+    color: #C1272D;
+    text-align: center;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    text-transform: uppercase; 
+}
+
+.contact-header div{
+    margin: 0 auto;
+    width: 125px;
+    height: 10px;
+    background-color: #C1272D;
+}
+.contact-from{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 600px;
+    border: 2px #000 solid;
+    border-radius: 15px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.7) 50%, rgba(255, 255, 255, 0.8) 100%);
+    margin-top: 20px;
+    padding: 20px 40px;
+}
+
+#name, #email, #phone, #subject, #massage{
+    width: 100%;
+    padding: 15px 20px;
+    margin: 10px auto;
+    border: none;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: 700;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.7) 50%, rgba(255, 255, 255, 0.8) 100%); 
+    color: #000;
+    box-shadow: 4px 4px 5px 5px rgba(0, 0, 0, 0.1);
+}
+    input[type=button]{
+    width: 200px;
+    height: 50px;
+    margin-top: 30px;
+    border-radius: 25px;
+    color: #FFF;
+    background: #C1272D;
+    font-size: 18px;
+}
+
+.business-card{
+    height: 300px;
+    z-index: -10000;
+    margin-top: -40px;
+}
+.business-card img{
+    height: 100%;
+    object-fit: cover;
+}
