@@ -7,7 +7,10 @@
 /* Whole Style */
 body{
     font-family: "Roboto",sans-serif;   
-    background-color: #efefef; 
+    background-color: #efefef;
+    background-image: url(./img/background-3.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
 }
 
 /* Navigation */
@@ -933,7 +936,7 @@ input[type=button]:active       {
     border: #000 2px solid;
     border-radius: 25px;
     margin-bottom: 300px;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.7) 50%, rgba(255, 255, 255, 0.8) 100%);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0.9) 100%);
 }
 @media(max-width:1080px){
     .about-container{
@@ -1009,7 +1012,7 @@ footer{
     background: linear-gradient(0deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%); 
 }
 .footer-content{
-    margin-top: 30px;
+    margin-top: 70px;
 }
 .footer-content p{
     color: #efefef;
