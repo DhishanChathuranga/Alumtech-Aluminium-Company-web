@@ -18,15 +18,15 @@
     <nav>
       <!-- logo -->
       <div class="logo">
-        <img src="./img/logo.png" />
+        <a href="index.html"><img src="./img/logo.png" /></a>
       </div>
       <!-- Nav-Menu -->
       <ul class="nav-menu">
-        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact-us">Contact Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about-us">About Us</a></li>
       </ul>
       <!-- hamburger -->
       <div class="hamburger">
@@ -53,7 +53,7 @@
             <!-- call section -->
             <div class="call-section">
               <h2>077 7706405</h2>
-              <button>Call Now</button>
+              <button><a href="tel:+94777706405">Call Now</a></button>
             </div>
           </div>
         </header>
@@ -63,7 +63,7 @@
     <br />
 
     <!-- ---------Services Section---------- -->
-    <div class="services">
+    <div class="services" id="services">
       <div class="services-header">
         <h1>Our Services</h1>
         <div></div>
@@ -216,7 +216,7 @@
     </div>
 
     <!-- --------------------Our Projects Section--------------------- -->
-    <div class="projects">
+    <div class="projects" id="projects">
       <div class="projects-header">
         <h1>Our Projects</h1>
         <div></div>
@@ -316,37 +316,41 @@
     </div>
 
     <!-- ------------------Contact Us------------------ -->
-    <div class="contact-container">
-      <div class="contact-header">
-        <h1>Contact Us</h1>
-        <div></div>
-      </div>
-      <form method="post" class="contact-from">
-        <input type="text" id="name" placeholder="Name" required>
-        <input type="email" id="email" placeholder="Email" required>
-        <input type="text" id="phone" placeholder="Phone No." required>
-        <input type="text" id="subject" placeholder="Subject." required>
-        <textarea id="massage" rows="4" placeholder="Enter Your Massage" required></textarea>
-        <input type="button" value="Send" onclick="send()">
-      </form>
-      <div class="business-card">
-        <img src="./img/Business Card.svg" alt="Business Card">
+    <div id="contact-us">
+      <div class="contact-container">
+        <div class="contact-header">
+          <h1>Contact Us</h1>
+          <div></div>
+        </div>
+        <form method="post" class="contact-from">
+          <input type="text" id="name" placeholder="Name" required>
+          <input type="email" id="email" placeholder="Email" required>
+          <input type="text" id="phone" placeholder="Phone No." required>
+          <input type="text" id="subject" placeholder="Subject." required>
+          <textarea id="massage" rows="4" placeholder="Enter Your Massage" required></textarea>
+          <input type="button" value="Send" onclick="send()">
+        </form>
+        <div class="business-card">
+          <img src="./img/Business Card.svg" alt="Business Card">
+        </div>
       </div>
     </div>
 
     <!-- ----------------------About Us------------------------ -->
-    <div class="about-container">
-      <div class="about-header">
-        <h1>About Us</h1>
-        <div></div>
-      </div>
-      <div class="about-content">
-        <p>
-          At Alumtech Aluminum Fabrication, we pride ourselves on having a team of skilled and experienced fabricators who are passionate about their work. Our team includes experts in a range of fabrication techniques, from welding to cutting and beyond. We are constantly learning and growing to ensure that we can deliver the best possible results to our clients.
-          <br/>
-          <br/>
-          If you're looking for a reliable and experienced aluminum fabrication partner for your next project, look no further than Alumtech Aluminum Fabrication. Contact us today to learn more about how we can help you create beautiful, durable, and functional structures that will stand the test of time.
-        </p>
+    <div id="about-us">
+      <div class="about-container">
+        <div class="about-header">
+          <h1>About Us</h1>
+          <div></div>
+        </div>
+        <div class="about-content">
+          <p>
+            At Alumtech Aluminum Fabrication, we pride ourselves on having a team of skilled and experienced fabricators who are passionate about their work. Our team includes experts in a range of fabrication techniques, from welding to cutting and beyond. We are constantly learning and growing to ensure that we can deliver the best possible results to our clients.
+            <br/>
+            <br/>
+            If you're looking for a reliable and experienced aluminum fabrication partner for your next project, look no further than Alumtech Aluminum Fabrication. Contact us today to learn more about how we can help you create beautiful, durable, and functional structures that will stand the test of time.
+          </p>
+        </div>
       </div>
     </div>
     
