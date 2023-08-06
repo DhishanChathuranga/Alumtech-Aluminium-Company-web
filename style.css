@@ -920,3 +920,55 @@ input[type=button]:active       {
         font-size: 12px;
     }
 }
+
+/* ------------------About Us--------------------- */
+.about-container{
+    margin-top: 200px;
+    width: 1000px;
+    /* height: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: #000 2px solid;
+    border-radius: 25px;
+    margin-bottom: 300px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.7) 50%, rgba(255, 255, 255, 0.8) 100%);
+}
+.about-header h1{
+    color: #C1272D;
+    text-align: center;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    text-transform: uppercase; 
+    margin-top: 20px;
+}
+@media(max-width:850px){
+    .about-header h1{
+        font-size: 48px; 
+    }
+}
+@media(max-width:450px){
+    .about-header h1{
+        font-size: 36px;
+    }
+}
+.about-header div{
+    margin: 0 auto;
+    width: 125px;
+    height: 10px;
+    background-color: #C1272D;
+}
+@media(max-width:450px){
+    .about-header div{
+        width: 90px;
+        height: 5px;
+    }
+}
+.about-contant p{
+    padding: 40px;
+    font-size: 24px;
+    opacity: 80%;
+}
